@@ -26,12 +26,11 @@ let package = Package(
 //        ),
         .binaryTarget(
             name: "RevDevNetworkSDK", 
-            url: "https://github.com/amit-sgwn/RevDevNetworkSDK/releases/download/1.0.1/RevDevNetworkSDK.xcframework.zip",
-            checksum: "94db05be4b3dd535331f3466d772030c1b1159d77261eda93c803627c5f145dd"),
-//        .testTarget(
-//            name: "RevDevNetworkSDKTests",
-//            dependencies: ["RevDevNetworkSDK"]
-//        )
+            path: "./releases/RevDevNetworkSDK.xcframework"),
+       .testTarget(
+           name: "RevDevNetworkSDKTests",
+           dependencies: ["RevDevNetworkSDK"]
+       )
     ]
 )
 
