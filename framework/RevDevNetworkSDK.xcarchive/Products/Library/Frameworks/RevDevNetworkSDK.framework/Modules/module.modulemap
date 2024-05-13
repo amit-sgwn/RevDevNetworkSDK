@@ -1,0 +1,6 @@
+framework module RevDevNetworkSDK {
+  umbrella header "RevDevNetworkSDK.h"
+  export *
+
+  module * { export * }
+}
