@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://homepage-of-RevDevNetworkSDK.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Your Name' => 'amitsangwan898@gmail.com' }
-  s.source = { :git => 'https://github.com/yourusername/RevDevNetworkSDK.git', :tag => '1.0.0' }
+ s.source = { :http => 'https://github.com/amit-sgwn/RevDevNetworkSDK/releases/download/1.0.0/RevDevNetworkSDK.xcframework.zip' }
+
 
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
