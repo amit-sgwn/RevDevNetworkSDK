@@ -1,0 +1,1331 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkService",
+        "printedName": "NetworkService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(networkDelegate:cache:decoder:headers:timeoutInterval:retryPolicy:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkService",
+                "printedName": "RevDevNetworkSDK.NetworkService",
+                "usr": "s:16RevDevNetworkSDK0C7ServiceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDelegate",
+                "printedName": "any Foundation.URLSessionDelegate",
+                "hasDefaultArg": true,
+                "usr": "c:objc(pl)NSURLSessionDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RevDevNetworkSDK.CacheProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CacheProtocol",
+                    "printedName": "any RevDevNetworkSDK.CacheProtocol",
+                    "usr": "s:16RevDevNetworkSDK13CacheProtocolP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation11JSONDecoderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RevDevNetworkSDK.RetryPolicy?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RetryPolicy",
+                    "printedName": "RevDevNetworkSDK.RetryPolicy",
+                    "usr": "s:16RevDevNetworkSDK11RetryPolicyO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16RevDevNetworkSDK0C7ServiceC15networkDelegate5cache7decoder7headers15timeoutInterval11retryPolicyACSo012NSURLSessionG0_p_AA13CacheProtocol_pSg10Foundation11JSONDecoderCSDyS2SGSgSdAA05RetryN0OSgtcfc",
+            "mangledName": "$s16RevDevNetworkSDK0C7ServiceC15networkDelegate5cache7decoder7headers15timeoutInterval11retryPolicyACSo012NSURLSessionG0_p_AA13CacheProtocol_pSg10Foundation11JSONDecoderCSDyS2SGSgSdAA05RetryN0OSgtcfc",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchData",
+            "printedName": "fetchData(url:headers:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_0_0, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_0_0, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK0C7ServiceC9fetchData3url7headers10completiony10Foundation3URLV_SDyS2SGSgys6ResultOyxs5Error_pGctSeRzlF",
+            "mangledName": "$s16RevDevNetworkSDK0C7ServiceC9fetchData3url7headers10completiony10Foundation3URLV_SDyS2SGSgys6ResultOyxs5Error_pGctSeRzlF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchData",
+            "printedName": "fetchData(url:headers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK0C7ServiceC9fetchData3url7headersx10Foundation3URLV_SDyS2SGSgtYaKSeRzlF",
+            "mangledName": "$s16RevDevNetworkSDK0C7ServiceC9fetchData3url7headersx10Foundation3URLV_SDyS2SGSgtYaKSeRzlF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16RevDevNetworkSDK0C7ServiceC",
+        "mangledName": "$s16RevDevNetworkSDK0C7ServiceC",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NetworkServiceProtocol",
+            "printedName": "NetworkServiceProtocol",
+            "usr": "s:16RevDevNetworkSDK0C15ServiceProtocolP",
+            "mangledName": "$s16RevDevNetworkSDK0C15ServiceProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RetryPolicy",
+        "printedName": "RetryPolicy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevDevNetworkSDK.RetryPolicy.Type) -> RevDevNetworkSDK.RetryPolicy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RetryPolicy",
+                    "printedName": "RevDevNetworkSDK.RetryPolicy",
+                    "usr": "s:16RevDevNetworkSDK11RetryPolicyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevDevNetworkSDK.RetryPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RetryPolicy",
+                        "printedName": "RevDevNetworkSDK.RetryPolicy",
+                        "usr": "s:16RevDevNetworkSDK11RetryPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16RevDevNetworkSDK11RetryPolicyO4noneyA2CmF",
+            "mangledName": "$s16RevDevNetworkSDK11RetryPolicyO4noneyA2CmF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fixed",
+            "printedName": "fixed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevDevNetworkSDK.RetryPolicy.Type) -> (Swift.Int, Swift.Double) -> RevDevNetworkSDK.RetryPolicy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Double) -> RevDevNetworkSDK.RetryPolicy",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RetryPolicy",
+                        "printedName": "RevDevNetworkSDK.RetryPolicy",
+                        "usr": "s:16RevDevNetworkSDK11RetryPolicyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(maxRetries: Swift.Int, interval: Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevDevNetworkSDK.RetryPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RetryPolicy",
+                        "printedName": "RevDevNetworkSDK.RetryPolicy",
+                        "usr": "s:16RevDevNetworkSDK11RetryPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16RevDevNetworkSDK11RetryPolicyO5fixedyACSi_SdtcACmF",
+            "mangledName": "$s16RevDevNetworkSDK11RetryPolicyO5fixedyACSi_SdtcACmF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exponentialBackoff",
+            "printedName": "exponentialBackoff",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevDevNetworkSDK.RetryPolicy.Type) -> (Swift.Int, Swift.Double, Swift.Double, Swift.Double) -> RevDevNetworkSDK.RetryPolicy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Double, Swift.Double, Swift.Double) -> RevDevNetworkSDK.RetryPolicy",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RetryPolicy",
+                        "printedName": "RevDevNetworkSDK.RetryPolicy",
+                        "usr": "s:16RevDevNetworkSDK11RetryPolicyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(maxRetries: Swift.Int, initialDelay: Swift.Double, multiplier: Swift.Double, maxDelay: Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevDevNetworkSDK.RetryPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RetryPolicy",
+                        "printedName": "RevDevNetworkSDK.RetryPolicy",
+                        "usr": "s:16RevDevNetworkSDK11RetryPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16RevDevNetworkSDK11RetryPolicyO18exponentialBackoffyACSi_S3dtcACmF",
+            "mangledName": "$s16RevDevNetworkSDK11RetryPolicyO18exponentialBackoffyACSi_S3dtcACmF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16RevDevNetworkSDK11RetryPolicyO",
+        "mangledName": "$s16RevDevNetworkSDK11RetryPolicyO",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkDelegate",
+        "printedName": "NetworkDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:didReceive:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLAuthenticationChallenge",
+                "printedName": "Foundation.URLAuthenticationChallenge",
+                "usr": "c:objc(cs)NSURLAuthenticationChallenge"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthChallengeDisposition",
+                        "printedName": "Foundation.URLSession.AuthChallengeDisposition",
+                        "usr": "c:@E@NSURLSessionAuthChallengeDisposition"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLCredential?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLCredential",
+                            "printedName": "Foundation.URLCredential",
+                            "usr": "c:objc(cs)NSURLCredential"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RevDevNetworkSDK@objc(cs)NetworkDelegate(im)URLSession:didReceiveChallenge:completionHandler:",
+            "mangledName": "$s16RevDevNetworkSDK0C8DelegateC10urlSession_10didReceive17completionHandlerySo12NSURLSessionC_So28NSURLAuthenticationChallengeCySo0l4AuthN11DispositionV_So15NSURLCredentialCSgtctF",
+            "moduleName": "RevDevNetworkSDK",
+            "isOpen": true,
+            "objc_name": "URLSession:didReceiveChallenge:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkDelegate",
+                "printedName": "RevDevNetworkSDK.NetworkDelegate",
+                "usr": "c:@M@RevDevNetworkSDK@objc(cs)NetworkDelegate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RevDevNetworkSDK@objc(cs)NetworkDelegate(im)init",
+            "mangledName": "$s16RevDevNetworkSDK0C8DelegateCACycfc",
+            "moduleName": "RevDevNetworkSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RevDevNetworkSDK@objc(cs)NetworkDelegate",
+        "mangledName": "$s16RevDevNetworkSDK0C8DelegateC",
+        "moduleName": "RevDevNetworkSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkServiceProtocol",
+        "printedName": "NetworkServiceProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchData",
+            "printedName": "fetchData(url:headers:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_1_0, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_1_0, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_1_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK0C15ServiceProtocolP9fetchData3url7headers10completiony10Foundation3URLV_SDyS2SGSgys6ResultOyqd__s5Error_pGctSeRd__lF",
+            "mangledName": "$s16RevDevNetworkSDK0C15ServiceProtocolP9fetchData3url7headers10completiony10Foundation3URLV_SDyS2SGSgys6ResultOyqd__s5Error_pGctSeRd__lF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : RevDevNetworkSDK.NetworkServiceProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : RevDevNetworkSDK.NetworkServiceProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchData",
+            "printedName": "fetchData(url:headers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK0C15ServiceProtocolP9fetchData3url7headersqd__10Foundation3URLV_SDyS2SGSgtYaKSeRd__lF",
+            "mangledName": "$s16RevDevNetworkSDK0C15ServiceProtocolP9fetchData3url7headersqd__10Foundation3URLV_SDyS2SGSgtYaKSeRd__lF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : RevDevNetworkSDK.NetworkServiceProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : RevDevNetworkSDK.NetworkServiceProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16RevDevNetworkSDK0C15ServiceProtocolP",
+        "mangledName": "$s16RevDevNetworkSDK0C15ServiceProtocolP",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CacheProtocol",
+        "printedName": "CacheProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "cachedResponse",
+            "printedName": "cachedResponse(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.CachedURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachedURLResponse",
+                    "printedName": "Foundation.CachedURLResponse",
+                    "usr": "c:objc(cs)NSCachedURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK13CacheProtocolP14cachedResponse3forSo19NSCachedURLResponseCSg10Foundation10URLRequestV_tF",
+            "mangledName": "$s16RevDevNetworkSDK13CacheProtocolP14cachedResponse3forSo19NSCachedURLResponseCSg10Foundation10URLRequestV_tF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RevDevNetworkSDK.CacheProtocol>",
+            "sugared_genericSig": "<Self where Self : RevDevNetworkSDK.CacheProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeCachedResponse",
+            "printedName": "storeCachedResponse(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CachedURLResponse",
+                "printedName": "Foundation.CachedURLResponse",
+                "usr": "c:objc(cs)NSCachedURLResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK13CacheProtocolP19storeCachedResponse_3forySo19NSCachedURLResponseC_10Foundation10URLRequestVtF",
+            "mangledName": "$s16RevDevNetworkSDK13CacheProtocolP19storeCachedResponse_3forySo19NSCachedURLResponseC_10Foundation10URLRequestVtF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RevDevNetworkSDK.CacheProtocol>",
+            "sugared_genericSig": "<Self where Self : RevDevNetworkSDK.CacheProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMemoryCapacity",
+            "printedName": "setMemoryCapacity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK13CacheProtocolP17setMemoryCapacityyySiF",
+            "mangledName": "$s16RevDevNetworkSDK13CacheProtocolP17setMemoryCapacityyySiF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RevDevNetworkSDK.CacheProtocol>",
+            "sugared_genericSig": "<Self where Self : RevDevNetworkSDK.CacheProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushCache",
+            "printedName": "flushCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK13CacheProtocolP05flushE0yyF",
+            "mangledName": "$s16RevDevNetworkSDK13CacheProtocolP05flushE0yyF",
+            "moduleName": "RevDevNetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : RevDevNetworkSDK.CacheProtocol>",
+            "sugared_genericSig": "<Self where Self : RevDevNetworkSDK.CacheProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16RevDevNetworkSDK13CacheProtocolP",
+        "mangledName": "$s16RevDevNetworkSDK13CacheProtocolP",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLCacheWrapper",
+        "printedName": "URLCacheWrapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cache:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLCacheWrapper",
+                "printedName": "RevDevNetworkSDK.URLCacheWrapper",
+                "usr": "s:16RevDevNetworkSDK15URLCacheWrapperC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLCache",
+                "printedName": "Foundation.URLCache",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLCache"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16RevDevNetworkSDK15URLCacheWrapperC5cacheACSo10NSURLCacheC_tcfc",
+            "mangledName": "$s16RevDevNetworkSDK15URLCacheWrapperC5cacheACSo10NSURLCacheC_tcfc",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "cachedResponse",
+            "printedName": "cachedResponse(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.CachedURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachedURLResponse",
+                    "printedName": "Foundation.CachedURLResponse",
+                    "usr": "c:objc(cs)NSCachedURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK15URLCacheWrapperC14cachedResponse3forSo19NSCachedURLResponseCSg10Foundation10URLRequestV_tF",
+            "mangledName": "$s16RevDevNetworkSDK15URLCacheWrapperC14cachedResponse3forSo19NSCachedURLResponseCSg10Foundation10URLRequestV_tF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeCachedResponse",
+            "printedName": "storeCachedResponse(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CachedURLResponse",
+                "printedName": "Foundation.CachedURLResponse",
+                "usr": "c:objc(cs)NSCachedURLResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK15URLCacheWrapperC19storeCachedResponse_3forySo19NSCachedURLResponseC_10Foundation10URLRequestVtF",
+            "mangledName": "$s16RevDevNetworkSDK15URLCacheWrapperC19storeCachedResponse_3forySo19NSCachedURLResponseC_10Foundation10URLRequestVtF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMemoryCapacity",
+            "printedName": "setMemoryCapacity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK15URLCacheWrapperC17setMemoryCapacityyySiF",
+            "mangledName": "$s16RevDevNetworkSDK15URLCacheWrapperC17setMemoryCapacityyySiF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushCache",
+            "printedName": "flushCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK15URLCacheWrapperC10flushCacheyyF",
+            "mangledName": "$s16RevDevNetworkSDK15URLCacheWrapperC10flushCacheyyF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16RevDevNetworkSDK15URLCacheWrapperC",
+        "mangledName": "$s16RevDevNetworkSDK15URLCacheWrapperC",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CacheProtocol",
+            "printedName": "CacheProtocol",
+            "usr": "s:16RevDevNetworkSDK13CacheProtocolP",
+            "mangledName": "$s16RevDevNetworkSDK13CacheProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NoCache",
+        "printedName": "NoCache",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "cachedResponse",
+            "printedName": "cachedResponse(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.CachedURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachedURLResponse",
+                    "printedName": "Foundation.CachedURLResponse",
+                    "usr": "c:objc(cs)NSCachedURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK7NoCacheC14cachedResponse3forSo19NSCachedURLResponseCSg10Foundation10URLRequestV_tF",
+            "mangledName": "$s16RevDevNetworkSDK7NoCacheC14cachedResponse3forSo19NSCachedURLResponseCSg10Foundation10URLRequestV_tF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeCachedResponse",
+            "printedName": "storeCachedResponse(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CachedURLResponse",
+                "printedName": "Foundation.CachedURLResponse",
+                "usr": "c:objc(cs)NSCachedURLResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK7NoCacheC19storeCachedResponse_3forySo19NSCachedURLResponseC_10Foundation10URLRequestVtF",
+            "mangledName": "$s16RevDevNetworkSDK7NoCacheC19storeCachedResponse_3forySo19NSCachedURLResponseC_10Foundation10URLRequestVtF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMemoryCapacity",
+            "printedName": "setMemoryCapacity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK7NoCacheC17setMemoryCapacityyySiF",
+            "mangledName": "$s16RevDevNetworkSDK7NoCacheC17setMemoryCapacityyySiF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushCache",
+            "printedName": "flushCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16RevDevNetworkSDK7NoCacheC05flushF0yyF",
+            "mangledName": "$s16RevDevNetworkSDK7NoCacheC05flushF0yyF",
+            "moduleName": "RevDevNetworkSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16RevDevNetworkSDK7NoCacheC",
+        "mangledName": "$s16RevDevNetworkSDK7NoCacheC",
+        "moduleName": "RevDevNetworkSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CacheProtocol",
+            "printedName": "CacheProtocol",
+            "usr": "s:16RevDevNetworkSDK13CacheProtocolP",
+            "mangledName": "$s16RevDevNetworkSDK13CacheProtocolP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/amitkumar\/Desktop\/RevDevNetworkSDK\/RevDevNetworkSDK\/Network.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1731,
+      "length": 2,
+      "value": "30"
+    }
+  ]
+}
